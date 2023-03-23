@@ -1,3 +1,7 @@
+.f-16 {
+  font-size: 16px;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +36,122 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.product-company--cards {
+  transform: translate3d(0px, 0px, 0px);
+  animation: nonStop 110s linear 0s infinite normal none running;
+  -webkit-animation: nonStop 110s linear 0s infinite normal none running;
+  display: flex;
+  margin-top: 55px;
+  /* min-width: 2786px; */
+}
+
+
+@keyframes nonStop {
+  100% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+@-o-keyframes nonStop {
+  100% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+@-moz-keyframes nonStop {
+  100% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes nonStop {
+  100% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+
+.title-gray {
+  color: rgb(64 64 64)
+}
+
+.text-light {
+  color: rgb(163 165 168);
+
+}
+
+.text-semi-dark {
+  color: rgb(64 64 64);
+}
+
+.text-dark {
+  color: rgb(64 64 64);
+
+}
+
+.subtext-gray {
+  color: rgb(112 112 112);
+}
+
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 16px;
+  min-width: 170px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-content li {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.animate {
+  animation: scroll 110s linear infinite;
 }

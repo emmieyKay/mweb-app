@@ -24,6 +24,7 @@ const ProductFilters = (props) => {
     const setFilterProviders = (checked, value) => {
         const selected = checked ? [...selectedProviders, value] : selectedProviders.filter(e => e !== value)
         selectProviders(selected)
+        console.log(selected)
     }
     const togglePrices = (checked, value) => {
         const selected = checked ? [...selectedPriceRanges, value] : selectedPriceRanges.filter(e => e !== value)
@@ -138,7 +139,8 @@ const ProductFilters = (props) => {
                         <div className="dropdown-content w-full">
                             {providers.map((item, index) => {
                                 const checkExists = selectedProviders.find(provider => provider === item)
-                                return (<DropdownItem  onChange={(e) => setFilterProviders(e.target.checked, item)} marked={checkExists ? true : false} label={item} key={index} id={`${item}`} />)
+                              
+                                return (<DropdownItem  onChange={(e) => setFilterProviders(e, item)} marked={checkExists ? true : false} label={item} key={index} id={`${item}`} />)
                             
                             })}
                         </div>

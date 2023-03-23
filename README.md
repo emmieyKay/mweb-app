@@ -1,4 +1,4 @@
-# spaceX-App
+# MWEB React app
 This is a react application
 
 [Netlify](https://mwep-app.netlify.app)
